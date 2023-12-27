@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL PROJECT</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" type="module" async></script>
+</head>
+<body class="page">
+
+    <header class="page-header">
+        <div class="page-header__left-side">
+            <img class="page-header__image" src="./images/Group 168.svg" alt="">
+            <h1 class="page-header__title">FINAL TASK</h1>
+        </div>
+
+        <div class="page-header__right-side">
+            <button class="page-header__button">Users</button>
+            <button class="page-header__button">Sign up</button>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <h1 class="page-main__title">Test assignment for front-end developer</h1>
+        <h1 class="page-main__title2">MAIN TITLE</h1>
+        <button class="page-main__button">Sign up</button>
+    </main>
+
+    <div class="AJAX">
+        <h1 class="AJAX__title">Working with GET request</h1>
+
+        <div class="AJAX__cards">
+
+        </div>
+
+        <button class="AJAX__button">Show more</button>
+    </div>
+
+    <div class="page-form__container">
+        <h1 class="page-form__title">Working with POST request</h1>
+
+        <form class="page-form" action="" method="post">
+
+            <input class="page-form__field" type="text" name="userName" placeholder="Your name"><br />
+            <input class="page-form__field" type="email" name="userEmail" placeholder="Email"><br />
+            <input class="page-form__field" type="text" name="userPhone" placeholder="Phone"><br />
+            <div class="userPhone__hint">+38 (XXX) XXX - XX - XX</div>
+
+            <div class="position-list">Select your position</div>
+
+            <div class="radio-container">
+                <input type="radio" name="position" id="Frontend developer" checked>
+                <label class="position-list__field" for="Frontend developer">Frontend developer</label><br />
+            </div>
+
+            <div class="radio-container">
+                <input type="radio" name="position" id="Backend developer">
+                <label class="position-list__field" for="Backend developer">Backend developer</label><br />
+            </div>
+
+            <div class="radio-container">
+                <input type="radio" name="position" id="Designer">
+                <label class="position-list__field" for="Designer">Designer</label><br />
+            </div>
+
+            <div class="radio-container">
+                <input type="radio" name="position" id="QA">
+                <label class="position-list__field" for="QA">QA</label><br />
+            </div>
+
+            <div class="upload-section">
+                <div class="upload-btn-box">
+                    <input type="file" id="files" hidden/>
+                    <label for="files"><span>Upload</span></label>
+                    <label for="files" class="txt">Upload your photo</label>
+                </div>
+            </div>            
+
+        </form>
+        <button class="upload-section__button">Sign up</button>
+    </div>
+
+    <footer class="page-footer"></footer>
+
+</body>
+</html>
