@@ -1,0 +1,46 @@
+.page-main{
+    width: 100%;
+    max-width: 1170px;
+    height: 650px;
+    background-image: url(./images/Rectangle\ 29.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-main__title{
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    width: 380px;
+    line-height: 40px;
+}
+
+.page-main__title2{
+    display: none;
+}
+
+.page-main__button{
+    width: 100px;
+    height: 34px;
+    color: #FFF;
+    background-color: #AA43C3;
+    border: 1px solid #AA43C3;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: 1.5s;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.page-main__button:hover{
+    background-color: #00BDD3;
+    border: 1px solid #00BDD3;
+    color: #FFF;
+    transition: 1.5s;
+}
