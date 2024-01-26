@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FINAL PROJECT</title>
+    <link rel="stylesheet" href="./fonts.css">
     <link rel="stylesheet" href="./index.css">
-    <script src="./index.js" type="module" async></script>
+    <!-- <script src="./index.js" type="module" async></script> -->
 </head>
 <body class="page">
 
@@ -30,7 +31,7 @@
     <div class="AJAX">
         <h1 class="AJAX__title">Working with GET request</h1>
 
-        <div class="AJAX__cards">
+        <div id="AJAX__cards" class="cards">
 
         </div>
 
@@ -40,12 +41,26 @@
     <div class="page-form__container">
         <h1 class="page-form__title">Working with POST request</h1>
 
-        <form class="page-form" action="" method="post">
+        <form class="page-form" action="https://wa-server-2-d6303887a0d7.herokuapp.com/api/v1/team-members/join" method="post">
 
-            <input class="page-form__field" type="text" name="userName" placeholder="Your name"><br />
-            <input class="page-form__field" type="email" name="userEmail" placeholder="Email"><br />
-            <input class="page-form__field" type="text" name="userPhone" placeholder="Phone"><br />
-            <div class="userPhone__hint">+38 (XXX) XXX - XX - XX</div>
+            <div class="input-container">
+                <input class="page-form__field" type="text" name="userName" placeholder="Your name" ><br />
+                <div class="label" style="display: none;">Label</div>
+                <div class="error-text2" style="display: none;">Error text</div>
+            </div>
+
+            <div class="input-container">
+                <input class="page-form__field" type="email" name="userEmail" placeholder="Email" ><br />
+                <div class="label" style="display: none;">Label</div>
+                <div class="error-text2" style="display: none;">Error text</div>
+            </div>    
+
+            <div class="input-container">
+                <input class="page-form__field last-field" type="text" name="userPhone" placeholder="Phone" ><br />
+                <div class="userPhone__hint">+38 (XXX) XXX - XX - XX</div>
+                <div class="label" style="display: none;">Label</div>
+                <div class="error-text2" style="display: none;">Error text</div>
+            </div>
 
             <div class="position-list">Select your position</div>
 
@@ -72,16 +87,26 @@
             <div class="upload-section">
                 <div class="upload-btn-box">
                     <input type="file" id="files" hidden/>
-                    <label for="files"><span>Upload</span></label>
+                    <label for="files"><span class="SPAN1">Upload</span></label>
                     <label for="files" class="txt">Upload your photo</label>
                 </div>
             </div>            
-
+            <p class="error-text" style="display: none;">Error text</p>
+            
+            <div class="button__container">
+                <input type="submit" class="upload-section__button" name="sign-up__button" value="Sign up">
+            </div>
         </form>
-        <button class="upload-section__button">Sign up</button>
+        <!-- <button class="upload-section__button">Sign up</button> -->
+
+        <!-- <h1 class="success-text" style="display: block;">User successfully registered</h1>
+        <img class="success-img" src="" alt="" style="display: none;"> -->
     </div>
+    <h1 class="success-text" style="display: none;">User successfully registered</h1>
+    <img class="success-img" src="" alt="" style="display: none;">
 
     <footer class="page-footer"></footer>
 
+    <script src="./index.js" type="module" async></script>
 </body>
 </html>
