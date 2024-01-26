@@ -1,2 +1,2 @@
 import { Members } from './getMembers.js';
-Members();
+Members(document.querySelector('#AJAX__cards'));
