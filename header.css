@@ -1,22 +1,27 @@
 .page-header{
     width: 100%;
-    max-width: 1170px;
+    /* max-width: 1170px; */
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content:center;  
+    box-shadow: 0px 2px 4px 0px #00000040;
 }
 
 .page-header__left-side{
+    max-width: 585px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .page-header__right-side{
+    max-width: 585px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .page-header__title{
