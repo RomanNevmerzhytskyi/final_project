@@ -3,6 +3,9 @@
     max-width: 1170px;
     height: 650px;
     background-image: url(./images/Rectangle\ 29.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     flex-direction: column;
