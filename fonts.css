@@ -2,31 +2,3 @@
     font-family: 'Nunito';
     src: url('./static/Nunito-Regular.ttf') format("truetype");
 }
-
-.label{
-    font-size: 12px;
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 14px;
-    color: #CB3D40;
-    position: absolute;
-    left: 16px;
-    top: -5px;
-    background-color: #FFF;
-}
-
-.input-container{
-    position: relative;
-}
-
-.error-text2{
-    font-size: 12px;
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    line-height: 14px;
-    color: #CB3D40;
-    position: absolute;
-    top: 56px;
-    left: 16px;
-}
